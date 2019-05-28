@@ -19,4 +19,5 @@ Clique em "Editar" para ver os detalhes da task e/ou modificá-la
 
 
 # Hospedagem
-Uma demo pode ser acessada em http://viniciusbussola.com.br:8080/
+Uma demo pode ser acessada em http://viniciusbussola.com.br:8080/  
+Para a demo foi utilizado Nginx e Gunicorn
