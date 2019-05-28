@@ -1,1 +1,27 @@
 # TaskList
+
+Implementação de uma tasklist utilizando python e django
+
+
+# Instalação
+- Clone este repositorio;  
+- Instale os requisitos;  
+- Crie um banco de dados Postgres com os dado do settings.py;  
+- Migre o banco;  
+- Crie um superuser;  
+- Runserver;  
+
+
+# Como funciona
+Acesse http://localhost:8000/. Esta aplicação permite que o usuário crie, edite e delete tasks.  
+Para marcá-las como concluída/inconcluída (alterar o status), basta clicar na task.  
+Clique em "Editar" para ver os detalhes da task e/ou modificá-la
+
+
+# Hospedagem
+Uma demo pode ser acessada em http://viniciusbussola.com.br:8080/  
+A demo está hospedada em um [Linode][linode], utilizando [Nginx][nginx] e [Gunicorn][gunicorn]
+
+[nginx]:https://www.nginx.com/
+[gunicorn]:http://gunicorn.org/
+[linode]: https://www.linode.com/
