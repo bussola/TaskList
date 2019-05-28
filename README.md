@@ -20,7 +20,7 @@ Clique em "Editar" para ver os detalhes da task e/ou modificá-la
 
 # Hospedagem
 Uma demo pode ser acessada em http://viniciusbussola.com.br:8080/  
-A demo está hospedada em um Linode[1], utilizando Nginx e Gunicorn
+A demo está hospedada em um Linode[1], utilizando [Nginx][nginx] e [Gunicorn][gunicorn]
 
-
-[1]: https://www.linode.com/
+[nginx]:https://www.nginx.com/
+[gunicorn]:http://gunicorn.org/
