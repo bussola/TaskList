@@ -23,4 +23,4 @@ Uma demo pode ser acessada em http://viniciusbussola.com.br:8080/
 A demo está hospedada em um Linode[1], utilizando Nginx e Gunicorn
 
 
-[1] https://www.linode.com/
+[1]: https://www.linode.com/
