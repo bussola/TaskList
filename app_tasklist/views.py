@@ -55,9 +55,7 @@ def deleteAll(request):
 
 def edit(request, todo_id):
     todo_data = Todo.objects.get(pk=todo_id)
-    form = EditTodoForm()
-    form.fields['edit_titulo'].widget.attrs['placeholder'] = todo_data.titulo
-    form.fields['descricao'].widget.attrs['placeholder'] = todo_data.descricao
+    form = EditTodoForm(initial={'edit_titulo': todo_data.titulo, 'descricao': todo_data.descricao})
     context = {
         'todo_data' : todo_data,
         'form': form,
