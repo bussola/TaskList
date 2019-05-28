@@ -16,3 +16,7 @@ Implementação de uma tasklist utilizando python e django
 Acesse http://localhost:8000/. Esta aplicação permite que o usuário crie, edite e delete tasks.  
 Para marcá-las como concluída/inconcluída (alterar o status), basta clicar na task.  
 Clique em "Editar" para ver os detalhes da task e/ou modificá-la
+
+
+# Hospedagem
+Uma demo pode ser acessada em http://viniciusbussola.com.br:8080/
