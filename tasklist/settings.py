@@ -31,7 +31,6 @@ ALLOWED_HOSTS = ['127.0.0.1', '173.230.150.95', 'viniciusbussola.com.br']
 # Application definition
 
 INSTALLED_APPS = [
-    'todo',
     'app_tasklist',
     'django.contrib.admin',
     'django.contrib.auth',
