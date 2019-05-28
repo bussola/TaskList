@@ -81,7 +81,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'db_projeto_tasklist',
-        'USER': 'postgres',
+        'USER': 'postgres1',
         'PASSWORD': 'senha123',
         'HOST': 'localhost',
         'PORT': '',
