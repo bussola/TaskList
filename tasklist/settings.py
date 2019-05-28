@@ -25,7 +25,7 @@ SECRET_KEY = 'oa0bmgfv(jiz-7)9q2)2l5p(#pkv=jg6res&%^^y(dkxlio4vj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '173.230.150.95', 'viniciusbussola.com.br']
+ALLOWED_HOSTS = ['127.0.0.1', '173.230.150.95', 'viniciusbussola.com.br', 'localhost']
 
 
 # Application definition

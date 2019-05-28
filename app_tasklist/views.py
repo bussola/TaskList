@@ -17,6 +17,7 @@ def index(request):
     return render(request, 'app_tasklist/index.html', context)
 
 
+#Adiciona uma task
 @require_POST
 def addTodo(request):
     form = TodoForm(request.POST)
@@ -27,6 +28,7 @@ def addTodo(request):
 
     return redirect('index')
 
+#Marca como completa
 def completeTodo(request, todo_id):
     todo = Todo.objects.get(pk=todo_id)
     todo.complete = True
@@ -35,6 +37,7 @@ def completeTodo(request, todo_id):
 
     return redirect('index')
 
+#Marca como incompleta
 def inCompleteTodo(request, todo_id):
     todo = Todo.objects.get(pk=todo_id)
     todo.complete = False
@@ -43,16 +46,19 @@ def inCompleteTodo(request, todo_id):
 
     return redirect('index')
 
+#Deleta as task completadas
 def deleteCompleted(request):
     Todo.objects.filter(complete__exact=True).delete()
 
     return redirect('index')
 
+#Deleta todas as tasks
 def deleteAll(request):
     Todo.objects.all().delete()
 
     return redirect('index')
 
+#Mostra as info da task
 def edit(request, todo_id):
     todo_data = Todo.objects.get(pk=todo_id)
     form = EditTodoForm(initial={'edit_titulo': todo_data.titulo, 'descricao': todo_data.descricao})
@@ -63,6 +69,7 @@ def edit(request, todo_id):
 
     return render(request, 'app_tasklist/editar.html', context)
 
+#Atualiza uma task
 @require_POST
 def update(request, todo_id):
     todo = Todo.objects.get(pk=todo_id)
@@ -75,6 +82,7 @@ def update(request, todo_id):
 
     return redirect('index')
 
+#Deleta uma task
 def deleteone(request, todo_id):
     todo = Todo.objects.get(pk=todo_id).delete()
 
